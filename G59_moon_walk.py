@@ -17,7 +17,7 @@ people = [
     "Eyasu Yidnekachew Asres",
     "Asegid Adane Daba",
 ]
-
+ 
 def round_robin_pairing(n):
     if n % 2 != 0:
         n += 1  # If the number of students is odd, add an extra student with a placeholder
