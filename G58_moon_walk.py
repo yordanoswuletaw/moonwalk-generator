@@ -18,7 +18,7 @@ people = [
     "Aschalew Abayneh Toze",
     "Abdi Esayas Bayisa",
 ]
-
+ 
 def round_robin_pairing(n):
     if n % 2 != 0:
         n += 1  # If the number of students is odd, add an extra student with a placeholder
@@ -55,10 +55,21 @@ pairs_schedule = round_robin_pairing(n_students)
 # for day, pairs in enumerate(pairs_schedule, start=1):
 #     for 
 print("Hey team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
-day = 3
+maxRound = n_students - 2
+day = 0
+try:
+    with open('rounds_g58.txt', 'r') as f:
+        round = f.read().strip()
+        day = int(round) if round else 0
+except FileNotFoundError:
+    with open('rounds_g58.txt', 'w') as f:
+       f.write(str(day))
+
 n = len(people)
 count = 0
 for i, j in pairs_schedule[day]:
     count+=1
     print(f'{people[i-1]} <> {people[(j-1)%n]}')
 print(count)
+with open('rounds_g58.txt', 'w') as f:
+        f.write(str((day + 1) % maxRound))
