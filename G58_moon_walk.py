@@ -17,6 +17,11 @@ people = [
     "Biruk Tesfaye Hanifato",
     "Aschalew Abayneh Toze",
     "Abdi Esayas Bayisa",
+    "Sari Amin ",
+    "Hamza Haji Fato",
+    "Nebiyu Musbah Yesuf",
+    "Abdi Dawud Tusi",
+    "Mubarak Adem Muhammed",
 ]
  
 def round_robin_pairing(n):
@@ -56,7 +61,7 @@ pairs_schedule = round_robin_pairing(n_students)
 #     for 
 print("Hey team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
 maxRound = n_students - 2
-day = 0
+day = 15
 try:
     with open('rounds_g58.txt', 'r') as f:
         round = f.read().strip()

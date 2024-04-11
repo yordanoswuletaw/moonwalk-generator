@@ -16,7 +16,11 @@ people = [
     "Duressa Shukuri Anota",
     "Eyasu Yidnekachew Asres",
     "Asegid Adane Daba",
-    '-------'
+    "Abdulwahid Hussen Ali",
+    "Fahmi Dinsefa Jemal",
+    "Dureti Mohammedsani Abubeker",
+    "Mohammed Ali Fenta",
+    "Nasiha Abdella Omer"
 ]
  
 def round_robin_pairing(n):
