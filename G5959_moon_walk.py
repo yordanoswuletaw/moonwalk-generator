@@ -1,28 +1,34 @@
 people = [
+    "Biniyam Negasa Supa",
+    "Yonas Sintayehu Abebe",
+    "Chera Mihiretu Tadese",
+    "Samuel Geremew Keno",
+    "Yohannes Welel Atnafu",
+    "Eyob Tariku Faro",
+    "Samuel Fikadesilassie Legesse",
+    "Fasil Hawultie Admasie",
+    "Tamirat Kebede Worati",
+    "Duressa Shukuri Anota",
+    "Asegid Adane Daba",
+    "Abdulwahid Hussen Ali",
+    "Fahmi Dinsefa Jemal",
+    "Dureti Mohammedsani Abubeker",
     "Naol Kasinet Worku",
     "Samuel Tolossa Neda",
     "Saleamlak Wendmnew",
     "Firaol Bulo Guluma",
-    "Ephrem Getachew Wadajo",
     "Hundera Awoke Yirdaw",
-    "Chala Olani Geleta",
-    "Abeselom Dejene Gebremikale",
     "Kiya Kebe Dibaba",
     "Dagim Chernet Gebreweld",
     "Nanati Asamnew Hora",
     "Kalkidan Kidane Woldmedhin",
-    "Nahom Derese Eshetu",
-    "Abel Wendmu Debela",
     "Dawit Getachew Wedajo",
     "Biruk Tesfaye Hanifato",
     "Aschalew Abayneh Toze",
     "Abdi Esayas Bayisa",
-    "Sari Amin ",
-    "Hamza Haji Fato",
     "Nebiyu Musbah Yesuf",
     "Abdi Dawud Tusi",
-    "Mubarak Adem Muhammed",
-    "-----------------------"
+    "Mubarak Adem Muhammed"
 ]
  
 def round_robin_pairing(n):
@@ -33,6 +39,7 @@ def round_robin_pairing(n):
 
     # Create a list to store pairs for each day
     pairs_per_day = []
+    
 
     # Generate pairs for each day
     for day in range(n - 1):
@@ -62,13 +69,13 @@ pairs_schedule = round_robin_pairing(n_students)
 #     for 
 print("Hey team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
 maxRound = n_students - 2
-day = 15
+day = 0
 try:
-    with open('rounds_g58.txt', 'r') as f:
+    with open('rounds_g5859.txt', 'r') as f:
         round = f.read().strip()
         day = int(round) if round else 0
 except FileNotFoundError:
-    with open('rounds_g58.txt', 'w') as f:
+    with open('rounds_g5859.txt', 'w') as f:
        f.write(str(day))
 
 n = len(people)
@@ -76,6 +83,7 @@ count = 0
 for i, j in pairs_schedule[day]:
     count+=1
     print(f'{people[i-1]} <> {people[(j-1)%n]}')
-print(count)
-with open('rounds_g58.txt', 'w') as f:
+print('Pairing Count: ', count)
+print('Seeding Number: ', day)
+with open('rounds_g5859.txt', 'w') as f:
         f.write(str((day + 1) % maxRound))

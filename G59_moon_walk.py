@@ -20,7 +20,7 @@ people = [
     "Fahmi Dinsefa Jemal",
     "Dureti Mohammedsani Abubeker",
     "Mohammed Ali Fenta",
-    "Nasiha Abdella Omer"
+    "Nasiha Abdella Omer",
 ]
  
 def round_robin_pairing(n):
@@ -74,6 +74,7 @@ count = 0
 for i, j in pairs_schedule[day]:
     count+=1
     print(f'{people[i-1]} <> {people[(j-1)%n]}')
-print(count)
+print('Pairing Count: ', count)
+print('Seeding Number: ', day)
 with open('rounds_g59.txt', 'w') as f:
         f.write(str((day + 1) % maxRound))
