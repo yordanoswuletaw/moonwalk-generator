@@ -52,7 +52,7 @@ pairs_schedule = round_robin_pairing(n_students)
 # Display the pairs for each day
 # for day, pairs in enumerate(pairs_schedule, start=1):
 #     for 
-print("Hey **<Web/>** team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
+print("Hey **<Web/>** team,  it's time for rainwalk 🌦️ 🚶‍♀️. Find your partner below and get to know each other 😊\n")
 maxRound = n_students - 2
 day = 10
 try:
