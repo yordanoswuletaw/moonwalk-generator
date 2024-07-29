@@ -13,7 +13,8 @@ people = [
 "Hundera Awoke",
 "Nahom Derese",
 "Nebiyu Musbah Yesuf",
-"Saleamlak Wendmnew"
+"Saleamlak Wendmnew",
+"-------------------"
 ]
  
 def round_robin_pairing(n):

@@ -7,14 +7,14 @@ people = [
 "Mubarak Adem Muhammed",
 "Nanati Asamnew",
 "Naol Kasinet",
-"Duressa Shukuri",
 "Fasil Hawultie",
 "Dureti Mohammedsani",
 "Samuel Geremew Keno",
 "kaleb wondimu wotale",
 "Kuma Telila",
 "Biniyam Negasa Supa",
-"Wondmeneh Dereje"
+"Wondmeneh Dereje",
+"---------------------------"
 ]
  
 def round_robin_pairing(n):

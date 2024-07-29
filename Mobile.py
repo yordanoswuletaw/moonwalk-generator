@@ -12,6 +12,7 @@ people = [
 "Kalkidan Kidane",
 "Samuel Tolossa",
 "Sari Amin Hussen",
+"Duressa Shukuri",
 ]
  
 def round_robin_pairing(n):
