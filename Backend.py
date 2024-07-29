@@ -56,11 +56,11 @@ print("Hey **{Backend}** team,  it's time for moonwalk 🌝 🚶‍♀️. Find 
 maxRound = n_students - 2
 day = 10
 try:
-    with open('rounds_g58.txt', 'r') as f:
+    with open('backend.txt', 'r') as f:
         round = f.read().strip()
         day = int(round) if round else 0
 except FileNotFoundError:
-    with open('rounds_g58.txt', 'w') as f:
+    with open('backend.txt', 'w') as f:
        f.write(str(day))
 
 n = len(people)
@@ -69,5 +69,5 @@ for i, j in pairs_schedule[day]:
     count+=1
     print(f'{people[i-1]} <> {people[(j-1)%n]}')
 print(count)
-with open('rounds_g58.txt', 'w') as f:
+with open('backend.txt', 'w') as f:
         f.write(str((day + 1) % maxRound))
