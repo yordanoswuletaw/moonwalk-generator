@@ -1,14 +1,17 @@
 people = [
-    "Abdi Dawud Tusi",
-    "Abdulwahid Hussen Ali",
-    "Fahmi Dinsefa Jemal",
-    "Mubarak Adem Muhammed",
-    "Nebiyu Musbah Yesuf",
-    "Dureti Mohammedsani Abubeker",
-    "Hamza Haji Fato",
-    "Mohammed Ali Fenta",
-    "Nasiha Abdella Omer",
-    "Sari Amin ",
+"Nasiha Abdella",
+"Chera Mihiretu Tadese",
+"Asegid Adane Daba",
+"Yohannes Welel",
+"Eyob Tariku Faro",
+"Fahmi Dinsefa",
+"Abeselom Dejene",
+"Aschalew Abayneh Toze",
+"Biruk Tesfaye",
+"Firaol Bulo",
+"Kalkidan Kidane",
+"Samuel Tolossa",
+"Sari Amin Hussen",
 ]
  
 def round_robin_pairing(n):
@@ -46,15 +49,15 @@ pairs_schedule = round_robin_pairing(n_students)
 # Display the pairs for each day
 # for day, pairs in enumerate(pairs_schedule, start=1):
 #     for 
-print("Hey team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
+print("Hey **Mobile;** team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
 maxRound = n_students - 2
-day = 0
+day = 10
 try:
-    with open('rounds_iftar.txt', 'r') as f:
+    with open('rounds_g58.txt', 'r') as f:
         round = f.read().strip()
         day = int(round) if round else 0
 except FileNotFoundError:
-    with open('rounds_iftar.txt', 'w') as f:
+    with open('rounds_g58.txt', 'w') as f:
        f.write(str(day))
 
 n = len(people)
@@ -63,5 +66,5 @@ for i, j in pairs_schedule[day]:
     count+=1
     print(f'{people[i-1]} <> {people[(j-1)%n]}')
 print(count)
-with open('rounds_iftar.txt', 'w') as f:
+with open('rounds_g58.txt', 'w') as f:
         f.write(str((day + 1) % maxRound))

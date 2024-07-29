@@ -1,26 +1,19 @@
 people = [
-    "Biniyam Negasa Supa",
-    "Yonas Sintayehu Abebe",
-    "Yeneineh Seiba Tonja",
-    "Wondmeneh Dereje Dadi",
-    "Chera Mihiretu Tadese",
-    "Kaleb Wondimu Wotale",
-    "Kuma Telila Bacha",
-    "Samuel Geremew Keno",
-    "Kidist Bezabih Wakgari",
-    "Yohannes Welel Atnafu",
-    "Eyob Tariku Faro",
-    "Samuel Fikadesilassie Legesse",
-    "Fasil Hawultie Admasie",
-    "Tamirat Kebede Worati",
-    "Duressa Shukuri Anota",
-    "Eyasu Yidnekachew Asres",
-    "Asegid Adane Daba",
-    "Abdulwahid Hussen Ali",
-    "Fahmi Dinsefa Jemal",
-    "Dureti Mohammedsani Abubeker",
-    "Mohammed Ali Fenta",
-    "Nasiha Abdella Omer",
+"Mohammed Ali Fenta",
+"Yeneineh Seiba Tonja",
+"Abdulwahid Hussen Ali",
+"Tamirat Kebede Worati",
+"Kidist Bezabih Wakgari",
+"Yonas Sintayehu",
+"samuel fikadesilassie legesse",
+"Abdi Esayas",
+"Abel Wendmu",
+"Dagim Chernet",
+"Hamza Haji Fato",
+"Hundera Awoke",
+"Nahom Derese",
+"Nebiyu Musbah Yesuf",
+"Saleamlak Wendmnew"
 ]
  
 def round_robin_pairing(n):
@@ -58,15 +51,15 @@ pairs_schedule = round_robin_pairing(n_students)
 # Display the pairs for each day
 # for day, pairs in enumerate(pairs_schedule, start=1):
 #     for 
-print("Hey team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
+print("Hey **{Backend}** team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
 maxRound = n_students - 2
-day = 0
+day = 10
 try:
-    with open('rounds_g59.txt', 'r') as f:
+    with open('rounds_g58.txt', 'r') as f:
         round = f.read().strip()
         day = int(round) if round else 0
 except FileNotFoundError:
-    with open('rounds_g59.txt', 'w') as f:
+    with open('rounds_g58.txt', 'w') as f:
        f.write(str(day))
 
 n = len(people)
@@ -74,7 +67,6 @@ count = 0
 for i, j in pairs_schedule[day]:
     count+=1
     print(f'{people[i-1]} <> {people[(j-1)%n]}')
-print('Pairing Count: ', count)
-print('Seeding Number: ', day)
-with open('rounds_g59.txt', 'w') as f:
+print(count)
+with open('rounds_g58.txt', 'w') as f:
         f.write(str((day + 1) % maxRound))

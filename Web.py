@@ -1,28 +1,20 @@
 people = [
-    "Naol Kasinet Worku",
-    "Samuel Tolossa Neda",
-    "Saleamlak Wendmnew",
-    "Firaol Bulo Guluma",
-    "Ephrem Getachew Wadajo",
-    "Hundera Awoke Yirdaw",
-    "Chala Olani Geleta",
-    "Abeselom Dejene Gebremikale",
-    "Kiya Kebe Dibaba",
-    "Dagim Chernet Gebreweld",
-    "Nanati Asamnew Hora",
-    "Kalkidan Kidane Woldmedhin",
-    "Nahom Derese Eshetu",
-    "Abel Wendmu Debela",
-    "Dawit Getachew Wedajo",
-    "Biruk Tesfaye Hanifato",
-    "Aschalew Abayneh Toze",
-    "Abdi Esayas Bayisa",
-    "Sari Amin ",
-    "Hamza Haji Fato",
-    "Nebiyu Musbah Yesuf",
-    "Abdi Dawud Tusi",
-    "Mubarak Adem Muhammed",
-    "-----------------------"
+"Abdi Dawud Tusi",
+"Chala Olani Geleta",
+"Dawit Getachew Wedajo",
+"Ephrem Getachew",
+"Kiya Kebe Dibaba",
+"Mubarak Adem Muhammed",
+"Nanati Asamnew",
+"Naol Kasinet",
+"Duressa Shukuri",
+"Fasil Hawultie",
+"Dureti Mohammedsani",
+"Samuel Geremew Keno",
+"kaleb wondimu wotale",
+"Kuma Telila",
+"Biniyam Negasa Supa",
+"Wondmeneh Dereje"
 ]
  
 def round_robin_pairing(n):
@@ -60,9 +52,9 @@ pairs_schedule = round_robin_pairing(n_students)
 # Display the pairs for each day
 # for day, pairs in enumerate(pairs_schedule, start=1):
 #     for 
-print("Hey team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
+print("Hey **<Web/>** team,  it's time for moonwalk 🌝 🚶‍♀️. Find your partner below and get to know each other 😊\n")
 maxRound = n_students - 2
-day = 15
+day = 10
 try:
     with open('rounds_g58.txt', 'r') as f:
         round = f.read().strip()
